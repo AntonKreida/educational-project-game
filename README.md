@@ -1,0 +1,1 @@
+My friends it's my first project. There will be an educational game here to improve my programming skills and work with github. Please be indulgent.
