@@ -3,15 +3,17 @@
 // -----------------------------------------------------------------------------
 
 // 1 - ABSTRACTS
-@import "./abstracts/fonts";
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 
 // 2 - BASE
+@import "./base/typography";
 @import "./base/base";
 @import "./base/helpers";
 
 // 3 - COMPONENTS
-
+@import "./components/form";
+@import "./components/button";
 
 // 4 - LAYOUT
+@import "./layout/main";

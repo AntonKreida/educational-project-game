@@ -1,0 +1,22 @@
+.button {
+  width: 246px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: $white;
+  background-color: $limeade;
+  transition: background 0.2s linear;
+
+  &:hover {
+    background-color: $lime;
+  }
+
+  &:active {
+    background-color: $christi;
+  }
+}
