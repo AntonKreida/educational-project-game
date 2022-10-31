@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "StratosSkyeng";
+  src: url("/src/assets/fonts/stratosskyeng/stratosskyengweb-regular.woff") format("woff"), url("/src/assets/fonts/stratosskyeng/stratosskyengweb-regular.woff2") format("woff2");
+}
+.body {
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 73, 128);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+/**
+* General style for page layout
+* 1. Make page layouts on the sides
+*/
+.center {
+  padding-left: calc(50% - 512px); /* 1 */
+  padding-right: calc(50% - 512px); /* 1 */
+}

@@ -1,0 +1,20 @@
+{
+  "name": "first_game",
+  "version": "1.0.0",
+  "description": "My friends it's my first project. There will be an educational game here to improve my programming skills and work with github. Please be indulgent.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonKreida/educational-project-game.git"
+  },
+  "author": "Anton Kreida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonKreida/educational-project-game/issues"
+  },
+  "homepage": "https://github.com/AntonKreida/educational-project-game#readme",
+  "private": true
+}
