@@ -8,40 +8,52 @@
     <title>First game</title>
   </head>
   <body class="body">
-    <div class="top center">
+    <div class="top center js-top">
       <!--Main-->
       <main class="main">
         <div class="main__inner">
           <h1 class="main__title title">Выбери сложность</h1>
-          <form class="main__form form" action="/" method="GET" novalidate>
+          <form
+            class="main__form form js-form"
+            action="/"
+            method="GET"
+            novalidate
+          >
             <div class="form__control">
               <input
-                class="form__input input"
+                class="form__input input js-input"
                 type="radio"
-                id="laval-one"
-                name="laval"
-                value="one"
+                id="lavel-one"
+                name="lavel"
+                value="1"
                 required
               />
-              <label class="form__label label" for="laval-one">1</label>
+              <label class="form__label label js-label" for="lavel-one"
+                >1</label
+              >
               <input
-                class="form__input input"
+                class="form__input input js-input"
                 type="radio"
-                id="laval-two"
-                name="laval"
-                value="two"
+                id="lavel-two"
+                name="lavel"
+                value="2"
                 required
               />
-              <label class="form__label label active" for="laval-two">2</label>
+              <label class="form__label label js-label" for="lavel-two"
+                >2</label
+              >
+
               <input
-                class="form__input input"
+                class="form__input input js-input"
                 type="radio"
-                id="laval-three"
-                name="laval"
-                value="three"
+                id="lavel-three"
+                name="lavel"
+                value="3"
                 required
               />
-              <label class="form__label label" for="laval-three">3</label>
+              <label class="form__label label js-label" for="lavel-three"
+                >3</label
+              >
             </div>
             <button class="form__button button" type="submit">Старт</button>
           </form>
