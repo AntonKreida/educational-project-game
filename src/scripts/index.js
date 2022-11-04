@@ -1,1 +1,3 @@
-import "./app/init.js";
+import "../index.html";
+import "../style/main.scss";
+import "./app/init";
