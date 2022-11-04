@@ -1,7 +1,7 @@
 .form {
   font-family: "StratosSkyeng";
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   font-size: 64px;
   line-height: 1.2;
   color: $congress-blue;
@@ -10,8 +10,8 @@
 .form__control {
   display: flex;
   align-items: center;
-  gap: 24px;
   width: 100%;
+  gap: 24px;
 }
 
 .form__input {
@@ -22,13 +22,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 12px;
   width: 98px;
   height: 98px;
-  border-radius: 12px;
   text-align: center;
   background-color: $white;
 
   &.active {
-    box-shadow: 0px 0px 2px 2px $lime;
+    box-shadow: 0 0 2px 2px $lime;
   }
 }

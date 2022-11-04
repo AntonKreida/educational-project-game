@@ -4,3 +4,4 @@ dist
 .eslintignore
 .prettierrc.json
 .prettierignore
+.stylelintrc.json

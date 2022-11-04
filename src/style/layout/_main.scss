@@ -1,25 +1,25 @@
 .main {
   display: flex;
   flex-direction: column;
+  border-radius: 12px;
   width: 480px;
   height: 460px;
-  border-radius: 12px;
   background-color: $onahau;
 }
 
 .main__inner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 48px;
+  justify-content: center;
   padding: 48px 70px;
+  gap: 48px;
 }
 
 .main__title {
-  font-size: 40px;
   font-weight: 400;
   font-style: normal;
+  font-size: 40px;
   line-height: 1.2;
   text-align: center;
   color: $congress-blue;
@@ -28,7 +28,7 @@
 .main__form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 67px;
 }
