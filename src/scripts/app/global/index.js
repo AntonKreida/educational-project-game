@@ -1,14 +1,14 @@
 window.globalStateApp = {
-  lavel: "",
-  timeGame: "",
+  lavel: '',
+  timeGame: '',
   status: {
-    lavelGame: "",
-    state: "",
-    result: "",
+    lavelGame: '',
+    state: '',
+    result: '',
   },
-  generationCard: "",
-  selectedCard: "",
-  renderPlayField: container => {
-    container.innerHTML = "";
+  generationCard: '',
+  selectedCard: '',
+  renderPlayField: (container) => {
+    container.innerHTML = ''
   },
-};
+}
