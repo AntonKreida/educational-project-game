@@ -1,0 +1,138 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style/main.scss ***!
+  \**************************************************************************************************************/
+@font-face {
+  font-family: "StratosSkyeng";
+  src: url(.././fonts/stratosskyengweb-regular..woff) format("woff"), url(.././fonts/stratosskyengweb-regular..woff2) format("woff2");
+}
+.body {
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 73, 128);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+/**
+* General style for page layout
+* 1. Make page layouts on the sides
+*/
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center {
+  padding-left: calc(50% - 512px); /* 1 */
+  padding-right: calc(50% - 512px); /* 1 */
+}
+
+.form {
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.2;
+  color: rgb(0, 73, 128);
+}
+
+.form__control {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.form__input {
+  display: none;
+}
+
+.form__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98px;
+  height: 98px;
+  border-radius: 12px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+.form__label.active {
+  box-shadow: 0px 0px 2px 2px rgb(163, 255, 5);
+}
+
+.button {
+  width: 246px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  background-color: rgb(122, 193, 0);
+  transition: background 0.2s linear;
+}
+.button:hover {
+  background-color: rgb(163, 255, 5);
+}
+.button:active {
+  background-color: rgb(122, 169, 20);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  height: 460px;
+  border-radius: 12px;
+  background-color: rgb(194, 245, 255);
+}
+
+.main__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  padding: 48px 70px;
+}
+
+.main__title {
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  text-align: center;
+  color: rgb(0, 73, 128);
+}
+
+.main__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 67px;
+}

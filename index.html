@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First game</title>
+  <script defer src="./script/bundle.js"></script><link href="./style/main.css" rel="stylesheet"></head>
+  <body class="body">
+    <div class="top center js-top">
+      <!--Main-->
+      <main class="main">
+        <div class="main__inner">
+          <h1 class="main__title title">Выбери сложность</h1>
+          <form
+            class="main__form form js-form"
+            action="/"
+            method="GET"
+            novalidate
+          >
+            <div class="form__control">
+              <input
+                class="form__input input js-input"
+                type="radio"
+                id="lavel-one"
+                name="lavel"
+                value="1"
+                required
+              />
+              <label class="form__label label js-label" for="lavel-one"
+                >1</label
+              >
+              <input
+                class="form__input input js-input"
+                type="radio"
+                id="lavel-two"
+                name="lavel"
+                value="2"
+                required
+              />
+              <label class="form__label label js-label" for="lavel-two"
+                >2</label
+              >
+
+              <input
+                class="form__input input js-input"
+                type="radio"
+                id="lavel-three"
+                name="lavel"
+                value="3"
+                required
+              />
+              <label class="form__label label js-label" for="lavel-three"
+                >3</label
+              >
+            </div>
+            <button class="form__button button" type="submit">Старт</button>
+          </form>
+        </div>
+      </main>
+      <!--/Main-->
+    </div>
+  </body>
+</html>
