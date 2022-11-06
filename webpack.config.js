@@ -9,12 +9,18 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
     filename: './script/bundle.js',
+    assetModuleFilename: 'images/[hash][ext][query]',
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
       path: path.resolve(__dirname, 'dist'),
       filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src', 'game-pages.html'),
+      path: path.resolve(__dirname, 'dist'),
+      filename: 'game-pages.html',
     }),
     new MiniCssExtractPlugin({
       filename: './style/main.css',
@@ -36,6 +42,10 @@ module.exports = {
         generator: {
           filename: './fonts/[name].[ext]',
         },
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: `asset/resource`,
       },
     ],
   },

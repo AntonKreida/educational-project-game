@@ -32,3 +32,14 @@
   justify-content: center;
   gap: 67px;
 }
+
+.main__control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main__field {
+  width: 100%;
+}

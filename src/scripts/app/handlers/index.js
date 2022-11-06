@@ -23,6 +23,7 @@ const handlers = {
   onClickLabel: (event) => {
     const target = event.target
     const labels = document.querySelectorAll('.js-label')
+    const button = document.querySelector('.js-button')
 
     if (!target.closest('.js-label')) {
       return
@@ -33,6 +34,7 @@ const handlers = {
     })
 
     target.classList.add('active')
+    button.removeAttribute('disabled')
   },
 }
 

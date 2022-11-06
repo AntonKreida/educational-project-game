@@ -1,0 +1,10 @@
+.main__field {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 15px;
+}
+
+.card-wrapper {
+  grid-column: span 1;
+}

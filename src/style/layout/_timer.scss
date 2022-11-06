@@ -1,0 +1,26 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  font-family: "StratosSkyeng";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.timer__text {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  line-height: 0.5;
+  text-align: end;
+  gap: 15px;
+}
+
+.text {
+  flex: 1;
+  padding-right: 5px;
+}
+
+.timer__time {
+  font-size: 64px;
+  line-height: 72px;
+}
