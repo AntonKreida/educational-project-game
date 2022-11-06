@@ -1,55 +1,56 @@
 {
-  "name": "first_game",
-  "version": "1.0.0",
-  "description": "My friends it's my first project. There will be an educational game here to improve my programming skills and work with github. Please be indulgent.",
-  "main": "index.js",
-  "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix",
-    "stylelint": "stylelint \"**/*.scss\"",
-    "stylelint:fix": "stylelint \"**/*.scss\" --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AntonKreida/educational-project-game.git"
-  },
-  "author": "Anton Kreida",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AntonKreida/educational-project-game/issues"
-  },
-  "homepage": "https://github.com/AntonKreida/educational-project-game#readme",
-  "private": true,
-  "devDependencies": {
-    "css-loader": "^6.7.1",
-    "eslint": "^8.26.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-html": "^7.1.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "gh-pages": "^4.0.0",
-    "html-loader": "^4.2.0",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.6.1",
-    "prettier": "^2.7.1",
-    "sass": "^1.56.0",
-    "sass-loader": "^13.1.0",
-    "stylelint": "^14.14.1",
-    "stylelint-config-standard-scss": "^6.1.0",
-    "stylelint-declaration-block-no-ignored-properties": "^2.6.0",
-    "stylelint-order": "^5.0.0",
-    "stylelint-scss": "^4.3.0",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
-  },
-  "dependencies": {
-    "stylelint-config-prettier-scss": "0.0.1"
-  }
+    "name": "first_game",
+    "version": "1.0.0",
+    "description": "My friends it's my first project. There will be an educational game here to improve my programming skills and work with github. Please be indulgent.",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack",
+        "watch": "webpack --watch",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist",
+        "eslint": "eslint ./src",
+        "eslint:fix": "eslint ./src --fix",
+        "stylelint": "stylelint \"**/*.scss\"",
+        "stylelint:fix": "stylelint \"**/*.scss\" --fix",
+        "prepare": "husky install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AntonKreida/educational-project-game.git"
+    },
+    "author": "Anton Kreida",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AntonKreida/educational-project-game/issues"
+    },
+    "homepage": "https://github.com/AntonKreida/educational-project-game#readme",
+    "private": true,
+    "devDependencies": {
+        "css-loader": "^6.7.1",
+        "eslint": "^8.26.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-html": "^7.1.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsx-a11y": "^6.6.1",
+        "eslint-plugin-prettier": "^4.2.1",
+        "gh-pages": "^4.0.0",
+        "html-loader": "^4.2.0",
+        "html-webpack-plugin": "^5.5.0",
+        "husky": "^8.0.0",
+        "mini-css-extract-plugin": "^2.6.1",
+        "prettier": "^2.7.1",
+        "sass": "^1.56.0",
+        "sass-loader": "^13.1.0",
+        "stylelint": "^14.14.1",
+        "stylelint-config-prettier-scss": "0.0.1",
+        "stylelint-config-standard-scss": "^6.1.0",
+        "stylelint-declaration-block-no-ignored-properties": "^2.6.0",
+        "stylelint-order": "^5.0.0",
+        "stylelint-scss": "^4.3.0",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0"
+    },
+    "dependencies": {}
 }
