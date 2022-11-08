@@ -4,7 +4,6 @@ const handlers = {
 
     const { target } = event;
     const inputs = target.querySelectorAll('.js-input');
-    const top = target.closest('.js-top');
 
     if (!target.checkValidity()) {
       return;
@@ -16,7 +15,7 @@ const handlers = {
       }
 
       window.globalStateApp.lavel = input.value;
-      window.globalStateApp.renderPlayField(top);
+      window.location.href = './game-pages.html';
     });
   },
 
