@@ -1,0 +1,9 @@
+node_modules/
+dist
+.eslintrc.json
+.eslintignore
+.prettierrc
+.prettierignore
+webpack.config.js
+.stylelintrc.json
+src/*.html

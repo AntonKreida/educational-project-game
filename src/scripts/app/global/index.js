@@ -9,6 +9,6 @@ window.globalStateApp = {
   generationCard: '',
   selectedCard: '',
   renderPlayField: (container) => {
-    container.innerHTML = ''
+    container.innerHTML = '';
   },
-}
+};

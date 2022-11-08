@@ -1,41 +1,41 @@
 const handlers = {
   onSubmitForm: (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
-    const { target } = event
-    const inputs = target.querySelectorAll('.js-input')
-    const top = target.closest('.js-top')
+    const { target } = event;
+    const inputs = target.querySelectorAll('.js-input');
+    const top = target.closest('.js-top');
 
     if (!target.checkValidity()) {
-      return
+      return;
     }
 
     inputs.forEach((input) => {
       if (!input.checked) {
-        return
+        return;
       }
 
-      window.globalStateApp.lavel = input.value
-      window.globalStateApp.renderPlayField(top)
-    })
+      window.globalStateApp.lavel = input.value;
+      window.globalStateApp.renderPlayField(top);
+    });
   },
 
   onClickLabel: (event) => {
-    const target = event.target
-    const labels = document.querySelectorAll('.js-label')
-    const button = document.querySelector('.js-button')
+    const { target } = event;
+    const labels = document.querySelectorAll('.js-label');
+    const button = document.querySelector('.js-button');
 
     if (!target.closest('.js-label')) {
-      return
+      return;
     }
 
     labels.forEach((label) => {
-      label.classList.remove('active')
-    })
+      label.classList.remove('active');
+    });
 
-    target.classList.add('active')
-    button.removeAttribute('disabled')
+    target.classList.add('active');
+    button.removeAttribute('disabled');
   },
-}
+};
 
-export default handlers
+export default handlers;
