@@ -162,6 +162,18 @@ img {
   grid-template-columns: repeat(9, 1fr);
   gap: 15px;
 }
+.main__field.easy {
+  grid-template-columns: repeat(3, 1fr);
+  width: 30%;
+}
+.main__field.normal {
+  grid-template-columns: repeat(4, 1fr);
+  width: 30%;
+}
+.main__field.hard {
+  grid-template-columns: repeat(6, 1fr);
+  width: 50%;
+}
 
 .card-wrapper {
   grid-column: span 1;
@@ -237,7 +249,7 @@ img {
 }
 
 .card-back {
-  background: rgb(228, 251, 255) url(../images/b547c6039554a0ba9a84.png) center no-repeat;
+  background: rgb(228, 251, 255) center no-repeat;
   transform: rotateY(180deg);
 }
 

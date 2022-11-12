@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<!DOCTYPE html>\\r\\n<html lang=\\\"en\\\">\\r\\n  <head>\\r\\n    <meta charset=\\\"UTF-8\\\">\\r\\n    <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\">\\r\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r\\n    <title>First game</title>\\r\\n  </head>\\r\\n  <body class=\\\"body\\\">\\r\\n    <div class=\\\"top center js-top\\\">\\r\\n      <!--Main-->\\r\\n      <main class=\\\"main\\\">\\r\\n        <div class=\\\"main__inner\\\">\\r\\n          <h1 class=\\\"main__title title\\\">Выбери сложность</h1>\\r\\n          <form\\r\\n            class=\\\"main__form form js-form\\\"\\r\\n            action=\\\"/\\\"\\r\\n            method=\\\"GET\\\"\\r\\n            novalidate\\r\\n          >\\r\\n            <div class=\\\"form__control\\\">\\r\\n              <input\\r\\n                class=\\\"form__input input js-input\\\"\\r\\n                type=\\\"radio\\\"\\r\\n                id=\\\"lavel-one\\\"\\r\\n                name=\\\"lavel\\\"\\r\\n                value=\\\"1\\\"\\r\\n                required\\r\\n              >\\r\\n              <label class=\\\"form__label label js-label\\\" for=\\\"lavel-one\\\">1</label>\\r\\n              <input\\r\\n                class=\\\"form__input input js-input\\\"\\r\\n                type=\\\"radio\\\"\\r\\n                id=\\\"lavel-two\\\"\\r\\n                name=\\\"lavel\\\"\\r\\n                value=\\\"2\\\"\\r\\n                required\\r\\n              >\\r\\n              <label class=\\\"form__label label js-label\\\" for=\\\"lavel-two\\\">2</label>\\r\\n              <input\\r\\n                class=\\\"form__input input js-input\\\"\\r\\n                type=\\\"radio\\\"\\r\\n                id=\\\"lavel-three\\\"\\r\\n                name=\\\"lavel\\\"\\r\\n                value=\\\"3\\\"\\r\\n                required\\r\\n              >\\r\\n              <label class=\\\"form__label label js-label\\\" for=\\\"lavel-three\\\">3</label>\\r\\n            </div>\\r\\n            <button class=\\\"form__button button js-button\\\" type=\\\"submit\\\" disabled>Старт</button>\\r\\n          </form>\\r\\n        </div>\\r\\n      </main>\\r\\n      <!--/Main-->\\r\\n    </div>\\r\\n  </body>\\r\\n</html>\\r\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://first_game/./src/index.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<!DOCTYPE html>\\r\\n<html lang=\\\"en\\\">\\r\\n  <head>\\r\\n    <meta charset=\\\"UTF-8\\\">\\r\\n    <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\">\\r\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r\\n    <title>First game</title>\\r\\n  </head>\\r\\n  <body class=\\\"body\\\">\\r\\n    <div class=\\\"top center js-top\\\">\\r\\n      <!--Main-->\\r\\n      <main class=\\\"main js-main\\\">\\r\\n        <div class=\\\"main__inner js-main-inner\\\">\\r\\n          <h1 class=\\\"main__title title\\\">Выбери сложность</h1>\\r\\n\\r\\n          <form\\r\\n            class=\\\"main__form form js-form\\\"\\r\\n            action=\\\"./scripts/app/controller/controller-form.js\\\"\\r\\n            method=\\\"GET\\\"\\r\\n            novalidate\\r\\n          >\\r\\n            <div class=\\\"form__control\\\">\\r\\n\\r\\n              <input\\r\\n                class=\\\"form__input input js-input\\\"\\r\\n                type=\\\"radio\\\"\\r\\n                id=\\\"lavel-one\\\"\\r\\n                name=\\\"lavel\\\"\\r\\n                value=\\\"easy\\\"\\r\\n                required\\r\\n              >\\r\\n              <label class=\\\"form__label label js-label\\\" for=\\\"lavel-one\\\">1</label>\\r\\n\\r\\n              <input\\r\\n                class=\\\"form__input input js-input\\\"\\r\\n                type=\\\"radio\\\"\\r\\n                id=\\\"lavel-two\\\"\\r\\n                name=\\\"lavel\\\"\\r\\n                value=\\\"normal\\\"\\r\\n                required\\r\\n              >\\r\\n              <label class=\\\"form__label label js-label\\\" for=\\\"lavel-two\\\">2</label>\\r\\n\\r\\n              <input\\r\\n                class=\\\"form__input input js-input\\\"\\r\\n                type=\\\"radio\\\"\\r\\n                id=\\\"lavel-three\\\"\\r\\n                name=\\\"lavel\\\"\\r\\n                value=\\\"hard\\\"\\r\\n                required\\r\\n              >\\r\\n              <label class=\\\"form__label label js-label\\\" for=\\\"lavel-three\\\">3</label>\\r\\n\\r\\n            </div>\\r\\n            <button class=\\\"form__button button js-button\\\" type=\\\"submit\\\" disabled>Старт</button>\\r\\n          </form>\\r\\n        </div>\\r\\n      </main>\\r\\n      <!--/Main-->\\r\\n    </div>\\r\\n  </body>\\r\\n</html>\\r\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://first_game/./src/index.html?");
 
 /***/ }),
 
@@ -31,24 +31,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./src/scripts/app/global/index.js":
-/*!*****************************************!*\
-  !*** ./src/scripts/app/global/index.js ***!
-  \*****************************************/
-/***/ (() => {
-
-eval("window.globalStateApp = {\r\n  lavel: '',\r\n  timeGame: '',\r\n  status: {\r\n    lavelGame: '',\r\n    state: '',\r\n    result: '',\r\n  },\r\n  generationCard: '',\r\n  selectedCard: '',\r\n  renderPlayField: (container) => {\r\n    container.innerHTML = '';\r\n  },\r\n};\r\n\n\n//# sourceURL=webpack://first_game/./src/scripts/app/global/index.js?");
-
-/***/ }),
-
-/***/ "./src/scripts/app/handlers/index.js":
-/*!*******************************************!*\
-  !*** ./src/scripts/app/handlers/index.js ***!
-  \*******************************************/
+/***/ "./src/scripts/app/controller/controller-form.js":
+/*!*******************************************************!*\
+  !*** ./src/scripts/app/controller/controller-form.js ***!
+  \*******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst handlers = {\r\n  onSubmitForm: (event) => {\r\n    event.preventDefault();\r\n\r\n    const { target } = event;\r\n    const inputs = target.querySelectorAll('.js-input');\r\n\r\n    if (!target.checkValidity()) {\r\n      return;\r\n    }\r\n\r\n    inputs.forEach((input) => {\r\n      if (!input.checked) {\r\n        return;\r\n      }\r\n\r\n      window.globalStateApp.lavel = input.value;\r\n      window.location.href = './game-pages.html';\r\n    });\r\n  },\r\n\r\n  onClickLabel: (event) => {\r\n    const { target } = event;\r\n    const labels = document.querySelectorAll('.js-label');\r\n    const button = document.querySelector('.js-button');\r\n\r\n    if (!target.closest('.js-label')) {\r\n      return;\r\n    }\r\n\r\n    labels.forEach((label) => {\r\n      label.classList.remove('active');\r\n    });\r\n\r\n    target.classList.add('active');\r\n    button.removeAttribute('disabled');\r\n  },\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (handlers);\r\n\n\n//# sourceURL=webpack://first_game/./src/scripts/app/handlers/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _view_template__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../view/template */ \"./src/scripts/app/view/template.js\");\n\r\n\r\nconst form = document.querySelector('.js-form');\r\n\r\nform.addEventListener('submit', (event) => {\r\n  event.preventDefault();\r\n\r\n  const { target } = event;\r\n  const { elements } = target;\r\n\r\n  if (!target.checkValidity) {\r\n    return;\r\n  }\r\n\r\n  const inputs = Array.from(elements).filter((element) => element.name);\r\n\r\n  inputs.forEach((input) => {\r\n    if (input.checked) {\r\n      window.globalStateApp.lavel = input.value;\r\n    }\r\n  });\r\n\r\n  (0,_view_template__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n});\r\n\n\n//# sourceURL=webpack://first_game/./src/scripts/app/controller/controller-form.js?");
 
 /***/ }),
 
@@ -59,7 +49,39 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _global_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./global/index.js */ \"./src/scripts/app/global/index.js\");\n/* harmony import */ var _global_index_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_global_index_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _handlers_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./handlers/index.js */ \"./src/scripts/app/handlers/index.js\");\n\r\n\r\n\r\nwindow.addEventListener('DOMContentLoaded', () => {\r\n  const form = document.querySelector('.js-form');\r\n\r\n  form.addEventListener('click', _handlers_index_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"].onClickLabel);\r\n  form.addEventListener('submit', _handlers_index_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"].onSubmitForm);\r\n});\r\n\n\n//# sourceURL=webpack://first_game/./src/scripts/app/init.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _controller_controller_form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./controller/controller-form */ \"./src/scripts/app/controller/controller-form.js\");\n/* harmony import */ var _view_view__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./view/view */ \"./src/scripts/app/view/view.js\");\n/* harmony import */ var _view_view__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_view_view__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\n\n//# sourceURL=webpack://first_game/./src/scripts/app/init.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/app/model/index.js":
+/*!****************************************!*\
+  !*** ./src/scripts/app/model/index.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getCards\": () => (/* binding */ getCards),\n/* harmony export */   \"getMarkupField\": () => (/* binding */ getMarkupField)\n/* harmony export */ });\nwindow.globalStateApp = {\r\n  lavel: '',\r\n  timeGame: '',\r\n  status: {\r\n    lavelGame: '',\r\n    state: '',\r\n    result: '',\r\n  },\r\n};\r\n\r\nconst cardDeck = {\r\n  suits: ['diamonds', 'hearts', 'clubs', 'spades'],\r\n  names: ['six', 'seven', 'eight', 'nine', 'ten', 'jack', 'queen', 'king', 'ace'],\r\n};\r\n\r\nconst patternCards = {\r\n  easy: 3,\r\n  normal: 6,\r\n  hard: 9,\r\n};\r\n\r\nconst markupFields = {\r\n  easy: 'easy',\r\n  normal: 'normal',\r\n  hard: 'hard',\r\n};\r\n\r\nconst getMarkupField = () => {\r\n  const markups = Object.keys(markupFields);\r\n  const markup = markups.find((element) => element === window.globalStateApp.lavel);\r\n  const markupCards = markupFields[markup];\r\n\r\n  return markupCards;\r\n};\r\n\r\nconst getRandomCards = (numberCards) => {\r\n  const cardsList = [];\r\n\r\n  for (let i = 0; i < numberCards; i += 1) {\r\n    const randomIndexArrSuits = Math.floor(Math.random() * cardDeck.suits.length);\r\n    const randomIndexArrName = Math.floor(Math.random() * cardDeck.names.length);\r\n\r\n    const randomCardSuits = cardDeck.suits[randomIndexArrSuits];\r\n    const randomCardName = cardDeck.names[randomIndexArrName];\r\n\r\n    cardsList.push({ randomCardSuits, randomCardName });\r\n  }\r\n\r\n  return cardsList;\r\n};\r\n\r\nconst getCardsForPaly = (cardsList) => {\r\n  const cards = cardsList;\r\n\r\n  const playCards = cards.concat(cards);\r\n  playCards.sort(() => Math.random() - 0.5);\r\n  return playCards;\r\n};\r\n\r\nconst getPlayCards = (func1, func2) => {\r\n  return () => {\r\n    const patterns = Object.keys(patternCards);\r\n    const lavel = patterns.find((element) => element === window.globalStateApp.lavel);\r\n    const numberCards = patternCards[lavel];\r\n\r\n    return func2(func1(numberCards));\r\n  };\r\n};\r\n\r\nconst getCards = getPlayCards(getRandomCards, getCardsForPaly);\r\n\n\n//# sourceURL=webpack://first_game/./src/scripts/app/model/index.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/app/view/template.js":
+/*!******************************************!*\
+  !*** ./src/scripts/app/view/template.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _model_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../model/index */ \"./src/scripts/app/model/index.js\");\n\r\n\r\nconst templateMainControl = (mainInner) => {\r\n  mainInner.innerHTML = `\r\n    <div class=\"main__control control\">\r\n       <div class=\"timer\">\r\n        <div class=\"timer__text\">\r\n         <p class=\"text\">min</p>\r\n         <p class=\"text\">sec</p>\r\n        </div>\r\n        <div class=\"timer__time time\">\r\n         <span class=\"js-time\">00.00</span>\r\n        </div>\r\n       </div>\r\n  \r\n      <button class=\"button\">Начать заново</button>\r\n    </div>`;\r\n};\r\n\r\nconst templateCard = (field) => {\r\n  const data = (0,_model_index__WEBPACK_IMPORTED_MODULE_0__.getCards)();\r\n  field.innerHTML = '';\r\n\r\n  // TODO: test function render cards\r\n  // eslint-disable-next-line array-callback-return\r\n  data.map((card) => {\r\n    field.innerHTML += `\r\n      <div class=\"card-wrapper\">\r\n       <div class=\"card\">\r\n        <div class=\"card-front\">\r\n          <img class=\"card__img\" src=\"./images/bg_card_real.png\" alt=\"\">\r\n        </div>\r\n        <div class=\"card-back\">\r\n          <img class=\"card__img\" src=\"./images/${card.randomCardSuits}-${card.randomCardName}.png\" alt=\"\">\r\n        </div>\r\n       </div>\r\n      </div>\r\n    `;\r\n  });\r\n};\r\n\r\nconst templateGamePages = () => {\r\n  const main = document.querySelector('.js-main');\r\n  main.classList.add('main-page');\r\n\r\n  const mainInner = document.querySelector('.js-main-inner');\r\n  mainInner.innerHTML = '';\r\n  mainInner.classList.add('main__inner-game-page');\r\n  templateMainControl(mainInner);\r\n\r\n  const mainField = document.createElement('div');\r\n  mainField.classList.add('main__field', 'field', `${(0,_model_index__WEBPACK_IMPORTED_MODULE_0__.getMarkupField)()}`);\r\n  mainInner.appendChild(mainField);\r\n\r\n  templateCard(mainField);\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (templateGamePages);\r\n\n\n//# sourceURL=webpack://first_game/./src/scripts/app/view/template.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/app/view/view.js":
+/*!**************************************!*\
+  !*** ./src/scripts/app/view/view.js ***!
+  \**************************************/
+/***/ (() => {
+
+eval("const form = document.querySelector('.js-form');\r\n\r\nform.addEventListener('click', (event) => {\r\n  const { target } = event;\r\n\r\n  const label = event.target.closest('.js-label');\r\n  const button = document.querySelector('.js-button');\r\n  const listLabels = document.querySelectorAll('.js-label');\r\n\r\n  if (target !== label) {\r\n    return;\r\n  }\r\n\r\n  listLabels.forEach((element) => {\r\n    element.classList.remove('active');\r\n  });\r\n\r\n  label.classList.add('active');\r\n  button.removeAttribute('disabled');\r\n});\r\n\n\n//# sourceURL=webpack://first_game/./src/scripts/app/view/view.js?");
 
 /***/ }),
 
@@ -70,18 +92,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _glo
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_images_bg_card_real_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/images/bg_card_real.png */ \"./src/assets/images/bg_card_real.png\");\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../index.html */ \"./src/index.html\");\n/* harmony import */ var _style_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/main.scss */ \"./src/style/main.scss\");\n/* harmony import */ var _app_init__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/init */ \"./src/scripts/app/init.js\");\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://first_game/./src/scripts/index.js?");
-
-/***/ }),
-
-/***/ "./src/assets/images/bg_card_real.png":
-/*!********************************************!*\
-  !*** ./src/assets/images/bg_card_real.png ***!
-  \********************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"images/aa603cdeeb1804dea96c.png\";\n\n//# sourceURL=webpack://first_game/./src/assets/images/bg_card_real.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.html */ \"./src/index.html\");\n/* harmony import */ var _style_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/main.scss */ \"./src/style/main.scss\");\n/* harmony import */ var _app_init__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/init */ \"./src/scripts/app/init.js\");\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://first_game/./src/scripts/index.js?");
 
 /***/ })
 
@@ -136,18 +147,6 @@ eval("module.exports = __webpack_require__.p + \"images/aa603cdeeb1804dea96c.png
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -162,26 +161,6 @@ eval("module.exports = __webpack_require__.p + \"images/aa603cdeeb1804dea96c.png
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl + "../";
 /******/ 	})();
 /******/ 	
 /************************************************************************/

@@ -9,43 +9,48 @@
   <body class="body">
     <div class="top center js-top">
       <!--Main-->
-      <main class="main">
-        <div class="main__inner">
+      <main class="main js-main">
+        <div class="main__inner js-main-inner">
           <h1 class="main__title title">Выбери сложность</h1>
+
           <form
             class="main__form form js-form"
-            action="/"
+            action="./scripts/app/controller/controller-form.js"
             method="GET"
             novalidate
           >
             <div class="form__control">
+
               <input
                 class="form__input input js-input"
                 type="radio"
                 id="lavel-one"
                 name="lavel"
-                value="1"
+                value="easy"
                 required
               >
               <label class="form__label label js-label" for="lavel-one">1</label>
+
               <input
                 class="form__input input js-input"
                 type="radio"
                 id="lavel-two"
                 name="lavel"
-                value="2"
+                value="normal"
                 required
               >
               <label class="form__label label js-label" for="lavel-two">2</label>
+
               <input
                 class="form__input input js-input"
                 type="radio"
                 id="lavel-three"
                 name="lavel"
-                value="3"
+                value="hard"
                 required
               >
               <label class="form__label label js-label" for="lavel-three">3</label>
+
             </div>
             <button class="form__button button js-button" type="submit" disabled>Старт</button>
           </form>
