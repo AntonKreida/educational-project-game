@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -9,7 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
     filename: './script/bundle.js',
-    assetModuleFilename: 'images/[hash][ext][query]',
+    assetModuleFilename: 'images/[name][ext][query]',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -17,13 +18,24 @@ module.exports = {
       path: path.resolve(__dirname, 'dist'),
       filename: 'index.html',
     }),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src', 'game-pages.html'),
-      path: path.resolve(__dirname, 'dist'),
-      filename: 'game-pages.html',
-    }),
     new MiniCssExtractPlugin({
       filename: './style/main.css',
+    }),
+    new CopyPlugin({
+      patterns: [{
+        from: "*.png",
+        to: "images/",
+        context: path.resolve(__dirname, 'src', 'assets', 'images', 'bg_card_front')
+      }
+      ],
+    }),
+    new CopyPlugin({
+      patterns: [{
+        from: "*.png",
+        to: "images/",
+        context: path.resolve(__dirname, 'src', 'assets', 'images')
+      }
+      ],
     }),
   ],
   module: {

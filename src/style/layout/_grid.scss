@@ -3,6 +3,21 @@
   justify-items: center;
   grid-template-columns: repeat(9, 1fr);
   gap: 15px;
+
+  &.easy {
+    grid-template-columns: repeat(3, 1fr);
+    width: 30%;
+  }
+
+  &.normal {
+    grid-template-columns: repeat(4, 1fr);
+    width: 30%;
+  }
+
+  &.hard {
+    grid-template-columns: repeat(6, 1fr);
+    width: 50%;
+  }
 }
 
 .card-wrapper {
