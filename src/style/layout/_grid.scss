@@ -11,12 +11,12 @@
 
   &.normal {
     grid-template-columns: repeat(4, 1fr);
-    width: 30%;
+    width: 40%;
   }
 
   &.hard {
     grid-template-columns: repeat(6, 1fr);
-    width: 50%;
+    width: 60%;
   }
 }
 
