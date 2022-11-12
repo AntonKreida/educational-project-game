@@ -14,7 +14,6 @@
         "stylelint:fix": "stylelint \"**/*.scss\" --fix",
         "prepare": "husky install",
         "lint": "eslint ./src && eslint ./src --fix"
-        
     },
     "repository": {
         "type": "git",
@@ -28,6 +27,7 @@
     "homepage": "https://github.com/AntonKreida/educational-project-game#readme",
     "private": true,
     "devDependencies": {
+        "copy-webpack-plugin": "^11.0.0",
         "css-loader": "^6.7.1",
         "eslint": "^8.26.0",
         "eslint-config-airbnb": "^19.0.4",
