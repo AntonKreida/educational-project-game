@@ -33,10 +33,10 @@ export const getMarkupField = () => {
   return markupCards;
 };
 
-const getRandomCards = (numberCards) => {
-  const cardsList = [];
+let cardsList = [];
 
-  for (let i = 0; i < numberCards; i += 1) {
+const getRandomCards = (numberCards) => {
+  for (let i = cardsList.length; i < numberCards; i += 1) {
     const randomIndexArrSuits = Math.floor(Math.random() * cardDeck.suits.length);
     const randomIndexArrName = Math.floor(Math.random() * cardDeck.names.length);
 
@@ -46,11 +46,22 @@ const getRandomCards = (numberCards) => {
     cardsList.push({ randomCardSuits, randomCardName });
   }
 
+  cardsList = cardsList.reduce((item, index) => {
+    if (!item.find((elem) => elem.randomCardName === index.randomCardName && elem.randomCardSuits === index.randomCardSuits)) {
+      item.push(index);
+    }
+    return item;
+  }, []);
+
+  if (cardsList.length < numberCards) {
+    getRandomCards(numberCards);
+  }
+
   return cardsList;
 };
 
-const getCardsForPaly = (cardsList) => {
-  const cards = cardsList;
+const getCardsForPaly = (arrListCard) => {
+  const cards = arrListCard;
 
   const playCards = cards.concat(cards);
   playCards.sort(() => Math.random() - 0.5);
