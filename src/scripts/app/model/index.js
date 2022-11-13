@@ -35,6 +35,7 @@ export const getMarkupField = () => {
 
 let cardsList = [];
 
+// TODO: test function get list arr card for render;
 const getRandomCards = (numberCards) => {
   for (let i = cardsList.length; i < numberCards; i += 1) {
     const randomIndexArrSuits = Math.floor(Math.random() * cardDeck.suits.length);
@@ -59,6 +60,8 @@ const getRandomCards = (numberCards) => {
 
   return cardsList;
 };
+
+// TODO: end function get list arr card for render;
 
 const getCardsForPaly = (arrListCard) => {
   const cards = arrListCard;
