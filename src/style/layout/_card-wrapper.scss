@@ -12,10 +12,10 @@
   transition: transform 0.2s linear;
 
   &:active {
-    transform: scale(0.95);
+    transform: scale(0.97);
   }
 
-  &.active {
+  &.flip {
     transform: rotateY(180deg);
   }
 }
