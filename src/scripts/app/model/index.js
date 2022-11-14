@@ -35,23 +35,24 @@ export const getMarkupField = () => {
 
 let cardsList = [];
 
-// TODO: test function get list arr card for render;
 const getRandomCards = (numberCards) => {
   for (let i = cardsList.length; i < numberCards; i += 1) {
     const randomIndexArrSuits = Math.floor(Math.random() * cardDeck.suits.length);
     const randomIndexArrName = Math.floor(Math.random() * cardDeck.names.length);
 
-    const randomCardSuits = cardDeck.suits[randomIndexArrSuits];
-    const randomCardName = cardDeck.names[randomIndexArrName];
+    const suit = cardDeck.suits[randomIndexArrSuits];
+    const name = cardDeck.names[randomIndexArrName];
 
-    cardsList.push({ randomCardSuits, randomCardName });
+    cardsList.push({ suit, name });
   }
 
-  cardsList = cardsList.reduce((item, index) => {
-    if (!item.find((elem) => elem.randomCardName === index.randomCardName && elem.randomCardSuits === index.randomCardSuits)) {
-      item.push(index);
+  // TODO: test function get cards for play
+  cardsList = cardsList.reduce((acc, item) => {
+    if (!acc.find((elem) => elem.name === item.name && elem.suit === item.suit)) {
+      acc.push(item);
     }
-    return item;
+
+    return acc;
   }, []);
 
   if (cardsList.length < numberCards) {
@@ -61,13 +62,12 @@ const getRandomCards = (numberCards) => {
   return cardsList;
 };
 
-// TODO: end function get list arr card for render;
-
 const getCardsForPaly = (arrListCard) => {
   const cards = arrListCard;
-
   const playCards = cards.concat(cards);
+
   playCards.sort(() => Math.random() - 0.5);
+
   return playCards;
 };
 

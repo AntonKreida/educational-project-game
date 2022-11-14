@@ -35,6 +35,9 @@
       }
     ],
 
+    //https://eslint.org/docs/latest/rules/no-unused-vars
+    "no-unused-vars": "warn",
+    
     // https://eslint.org/docs/latest/rules/prefer-const.htm
     "prefer-const": [
       "warn",
@@ -42,7 +45,6 @@
         "destructuring": "any"
       }
     ],
-
     //https://eslint.org/docs/latest/rules/array-callback-return
     "array-callback-return": [
       "error",
@@ -50,10 +52,8 @@
         "checkForEach": true
       }
     ],
-
     //https://eslint.org/docs/latest/rules/eol-last
     "eol-last": "error",
-
     // https://eslint.org/docs/latest/rules/max-len
     "max-len": [
       "warn",
@@ -66,22 +66,20 @@
         "ignoreTemplateLiterals": true
       }
     ],
-
     //https://eslint.org/docs/latest/rules/no-tabs
     "no-tabs": "off",
     "indent": [
       2
     ],
-
     //https://eslint.org/docs/latest/rules/no-param-reassign
     "no-param-reassign": "off",
-
     //https://eslint.org/docs/latest/rules/prefer-destructuring
     "prefer-destructuring": "error",
-
     //https://eslint.org/docs/latest/rules/quotes.html
-    "quotes": ["error", "single"],
-
+    "quotes": [
+      "error",
+      "single"
+    ],
     //https://eslint.org/docs/latest/rules/consistent-return
     "consistent-return": [
       1,
@@ -89,36 +87,33 @@
         "treatUndefinedAsUnspecified": true
       }
     ],
-
     //https://eslint.org/docs/latest/rules/no-multiple-empty-lines
-    "no-multiple-empty-lines": ["error", 
-    {
-      "max": 2,
-      "maxEOF": 1
-    }
-  ],
-
-  //https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md
-  "import/prefer-default-export": "error",
-
-  "import/newline-after-import": ["error", 
-  {
-    "count": 1
-  }
-],
-
-
-// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md#groups-array
-  "import/order": ["warn", 
-  {
-    "alphabetize": 
-    {
-      "order": "asc", 
-      "caseInsensitive": true
-    },
-    "newlines-between": "always",
-    "warnOnUnassignedImports": true
-  }
-]
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 2,
+        "maxEOF": 1
+      }
+    ],
+    //https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md
+    "import/prefer-default-export": "error",
+    "import/newline-after-import": [
+      "error",
+      {
+        "count": 1
+      }
+    ],
+    // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md#groups-array
+    "import/order": [
+      "warn",
+      {
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "newlines-between": "always",
+        "warnOnUnassignedImports": true
+      }
+    ]
   }
 }
