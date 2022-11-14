@@ -31,6 +31,7 @@ const templateGamePages = () => {
   mainField.classList.add('main__field', 'field', `${getMarkupField()}`);
   mainInner.appendChild(mainField);
 
+  // eslint-disable-next-line no-unused-vars
   const card = new Card(mainField, getCards);
 };
 
