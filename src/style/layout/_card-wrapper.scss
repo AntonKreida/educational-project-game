@@ -10,6 +10,7 @@
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.2s linear;
+  cursor: pointer;
 
   &:active {
     transform: scale(0.97);

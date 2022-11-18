@@ -27,6 +27,7 @@
   height: 98px;
   text-align: center;
   background-color: $white;
+  cursor: pointer;
 
   &.active {
     box-shadow: 0 0 2px 2px $lime;
