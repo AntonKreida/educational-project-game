@@ -76,6 +76,7 @@ img {
   height: 98px;
   text-align: center;
   background-color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 .form__label.active {
   box-shadow: 0 0 2px 2px rgb(163, 255, 5);
@@ -94,6 +95,7 @@ img {
   color: rgb(255, 255, 255);
   background-color: rgb(122, 193, 0);
   transition: background 0.2s linear;
+  cursor: pointer;
 }
 .button:hover {
   background-color: rgb(163, 255, 5);
@@ -218,6 +220,7 @@ img {
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.2s linear;
+  cursor: pointer;
 }
 .card:active {
   transform: scale(0.97);
