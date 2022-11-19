@@ -1,24 +1,33 @@
+import { getCards } from '../model/model-card';
+import { getMarkupField } from '../model/model-page';
 import templateGamePages from '../view/template';
 
-const form = document.querySelector('.js-form');
+import controllerTimer from './controller-timer';
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+const controllerForm = {
+  validateForm: (form) => {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const { target } = event;
+      const { elements } = target;
 
-  const { target } = event;
-  const { elements } = target;
+      if (!target.checkValidity) {
+        return;
+      }
 
-  if (!target.checkValidity) {
-    return;
-  }
+      const inputs = Array.from(elements).filter((element) => element.name);
 
-  const inputs = Array.from(elements).filter((element) => element.name);
+      inputs.forEach((input) => {
+        if (input.checked) {
+          window.globalStateApp.lavel = input.value;
+          window.globalStateApp.status = 'ready';
+        }
+      });
 
-  inputs.forEach((input) => {
-    if (input.checked) {
-      window.globalStateApp.lavel = input.value;
-    }
-  });
+      templateGamePages.getTemplate(getCards, getMarkupField);
+      controllerTimer.checkStatusGame();
+    });
+  },
+};
 
-  templateGamePages();
-});
+export default controllerForm;

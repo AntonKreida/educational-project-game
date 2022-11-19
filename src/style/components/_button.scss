@@ -11,6 +11,7 @@
   color: $white;
   background-color: $limeade;
   transition: background 0.2s linear;
+  cursor: pointer;
 
   &:hover {
     background-color: $lime;

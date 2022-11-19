@@ -16,13 +16,8 @@
   gap: 48px;
 }
 
-.main__title {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 40px;
-  line-height: 1.2;
-  text-align: center;
-  color: $congress-blue;
+.title {
+  @include font;
 }
 
 .main__form {

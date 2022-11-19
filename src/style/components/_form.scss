@@ -1,5 +1,5 @@
 .form {
-  font-family: 'StratosSkyeng';
+  font-family: "StratosSkyeng";
   font-weight: 400;
   font-style: normal;
   font-size: 64px;
@@ -27,6 +27,7 @@
   height: 98px;
   text-align: center;
   background-color: $white;
+  cursor: pointer;
 
   &.active {
     box-shadow: 0 0 2px 2px $lime;

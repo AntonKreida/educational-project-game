@@ -1,3 +1,13 @@
 // -----------------------------------------------------------------------------
 // This file contains all @mixin for the project
 // -----------------------------------------------------------------------------
+
+@mixin font {
+  font-family: $text-font-stack;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  color: $congress-blue;
+}
