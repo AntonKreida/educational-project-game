@@ -9,7 +9,6 @@ const controllerTimer = {
     const timerMin = document.querySelector('.js-min');
     const timerSec = document.querySelector('.js-sec');
     const cards = document.querySelectorAll('.js-card');
-    const timeEnd = document.querySelector('.js-time');
     const field = document.querySelector('.js-field');
     const button = document.querySelector('.js-button');
 
@@ -30,7 +29,6 @@ const controllerTimer = {
 
     const checkStatusEndGame = setInterval(() => {
       if (window.globalStateApp.status === 'end') {
-        window.globalStateApp.result.resultTimeGame = timeEnd.textContent;
         field.removeEventListener('click', controllerCard.onFlipCard);
         clearInterval(checkStatusEndGame);
       }

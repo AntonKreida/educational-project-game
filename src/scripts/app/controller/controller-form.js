@@ -1,5 +1,5 @@
 import { getCards } from '../model/model-card';
-import getMarkupField from '../model/model-page';
+import { getMarkupField } from '../model/model-page';
 import templateGamePages from '../view/template';
 
 import controllerTimer from './controller-timer';

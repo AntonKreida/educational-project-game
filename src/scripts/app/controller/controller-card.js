@@ -1,6 +1,8 @@
 import { getPatternCards } from '../model/model-card';
 import '../model/window';
 
+import controllerModal from './controller-modal';
+
 const controllerCard = {
   hasFlipCard: false,
   firstCard: null,
@@ -34,6 +36,7 @@ const controllerCard = {
       if (controllerCard.count === getPatternCards()) {
         window.globalStateApp.status = 'end';
         window.globalStateApp.result.status = 'win';
+        controllerModal.checkStatusGameResult();
       }
       return;
     }
@@ -45,6 +48,7 @@ const controllerCard = {
     setTimeout(() => {
       window.globalStateApp.status = 'end';
       window.globalStateApp.result.status = 'lose';
+      controllerModal.checkStatusGameResult();
     }, 500);
   },
 };

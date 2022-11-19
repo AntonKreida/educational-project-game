@@ -1,0 +1,49 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: $congress-blue-opacity;
+}
+
+.modal__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 30px;
+  width: 480px;
+  height: 460px;
+  background-color: $onahau;
+}
+
+.modal__img {
+  width: 96px;
+  height: 96px;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.modal__text {
+  @include font;
+  font-size: 24px;
+  line-height: 2;
+  color: $black;
+}
+
+.modal__time {
+  font-size: 64px;
+  line-height: 1.125;
+}
