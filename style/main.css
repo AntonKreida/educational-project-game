@@ -14,6 +14,9 @@
   color: rgb(255, 255, 255);
   background: rgb(0, 73, 128);
 }
+.body.no-scroll {
+  overflow: hidden;
+}
 
 * {
   margin: 0;
@@ -130,7 +133,8 @@ img {
   gap: 48px;
 }
 
-.main__title {
+.title {
+  font-family: "StratosSkyeng";
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
@@ -247,9 +251,9 @@ img {
 }
 
 .card__img {
+  border-radius: 4px;
   width: 100%;
   height: 100%;
-  border-radius: 4px;
   background-color: rgb(228, 251, 255);
   object-fit: cover;
 }
@@ -257,6 +261,62 @@ img {
 .card-back {
   background: rgb(228, 251, 255) center no-repeat;
   transform: rotateY(180deg);
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 73, 128, 0.9);
+}
+
+.modal__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 30px;
+  width: 480px;
+  height: 460px;
+  background-color: rgb(194, 245, 255);
+}
+
+.modal__img {
+  width: 96px;
+  height: 96px;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.modal__text {
+  font-family: "StratosSkyeng";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  color: rgb(0, 73, 128);
+  font-size: 24px;
+  line-height: 2;
+  color: rgb(0, 0, 0);
+}
+
+.modal__time {
+  font-size: 64px;
+  line-height: 1.125;
 }
 
 .main-page {
