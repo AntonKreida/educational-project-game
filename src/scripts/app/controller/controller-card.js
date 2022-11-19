@@ -36,6 +36,7 @@ const controllerCard = {
       if (controllerCard.count === getPatternCards()) {
         window.globalStateApp.status = 'end';
         window.globalStateApp.result.status = 'win';
+        controllerCard.count = 0;
         controllerModal.checkStatusGameResult();
       }
       return;
@@ -48,6 +49,7 @@ const controllerCard = {
     setTimeout(() => {
       window.globalStateApp.status = 'end';
       window.globalStateApp.result.status = 'lose';
+      controllerCard.count = 0;
       controllerModal.checkStatusGameResult();
     }, 500);
   },

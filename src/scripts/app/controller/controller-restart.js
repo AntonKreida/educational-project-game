@@ -1,7 +1,7 @@
 import { getCards } from '../model/model-card';
 import { getMarkupField } from '../model/model-page';
 import '../model/window';
-import templateGamePages from '../view/template';
+import templateGamePages from '../view/game-page';
 
 import controllerTimer from './controller-timer';
 

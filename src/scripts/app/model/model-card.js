@@ -20,6 +20,8 @@ export const getPatternCards = () => {
 };
 
 const getRandomCards = (numberCards) => {
+  cardsList = [];
+
   for (let i = cardsList.length; i < numberCards; i += 1) {
     const randomIndexSuits = Math.floor(Math.random() * cardDeck.suits.length);
     const randomIndexNames = Math.floor(Math.random() * cardDeck.names.length);

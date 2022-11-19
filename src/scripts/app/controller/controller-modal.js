@@ -2,6 +2,8 @@ import { getModalWindow } from '../model/model-page';
 import '../model/window';
 import viewModel from '../view/modal';
 
+import controllerReturn from './controller-return';
+
 const controllerModal = {
   checkStatusGameResult: () => {
     const body = document.querySelector('.js-body');
@@ -11,6 +13,8 @@ const controllerModal = {
     const { resultTimeGame, status } = window.globalStateApp.result;
     if (status === 'win' || status === 'lose') {
       viewModel.renderModal(getModalWindow(), resultTimeGame);
+
+      controllerReturn.returnIndexPage();
     }
   },
 };

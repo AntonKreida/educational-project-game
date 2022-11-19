@@ -1,7 +1,7 @@
 const viewModel = {
   modalWin: (timeResult) => {
     const modal = document.createElement('div');
-    modal.classList.add('modal');
+    modal.classList.add('modal', 'js-modal');
 
     const modalInner = document.createElement('div');
     modalInner.classList.add('modal__inner');
@@ -45,7 +45,7 @@ const viewModel = {
 
   modalLose: (timeResult) => {
     const modal = document.createElement('div');
-    modal.classList.add('modal');
+    modal.classList.add('modal', 'js-modal');
 
     const modalInner = document.createElement('div');
     modalInner.classList.add('modal__inner');
@@ -91,7 +91,7 @@ const viewModel = {
     const body = document.querySelector('.js-body');
     const modalWindow = viewModel[`${modal}`](timeResult);
 
-    body.append(modalWindow);
+    body.appendChild(modalWindow);
   },
 };
 
