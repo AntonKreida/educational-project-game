@@ -13,9 +13,16 @@
 
 # **Функционал проекта и используемые технологии**
 
+Ссылка на package.json: [config](https://github.com/AntonKreida/educational-project-game/blob/main/package.json)
+
 Внешний вид оформлен с помощью предпроцессора SCSS/SASS.
 
-Сборка использовалась с помощью Webpack 5, ссылка на config файл: [config.](https://github.com/AntonKreida/educational-project-game/blob/main/webpack.config.js)
+При сборке проекта использовался Webpack, ссылка на config файл: [config.](https://github.com/AntonKreida/educational-project-game/blob/main/webpack.config.js).
+
+Линтеры:
++ Eslint: [config](https://github.com/AntonKreida/educational-project-game/blob/main/.eslintrc.json)
++ Stylelint: [config](https://github.com/AntonKreida/educational-project-game/blob/main/.stylelintrc.json) 
++ Ну и куда же без pretter: [config](https://github.com/AntonKreida/educational-project-game/blob/main/.prettierrc.json)
 
 Вся основная логика игры была написана на чистом **JS**:
 + Игрок выбирает уровень сложности: *easy*, *normal*, *hard*.
