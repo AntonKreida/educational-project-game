@@ -1,7 +1,11 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const isDev = process.env.NODE_ENV === 'development';
+const isProd = !isDev;
+const filename = (ext) => isDev ? `bundle.${ext}` : `bundle.[contenthash].${ext}`;
 
 module.exports = {
   mode: 'development',
@@ -9,14 +13,27 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    filename: './script/bundle.js',
+    filename: `./script/${filename('js')}`,
     assetModuleFilename: 'images/[name][ext][query]',
+  },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    historyApiFallback: true,
+    open: true,
+    port: 3000,
+    compress: true,
+    hot: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
       path: path.resolve(__dirname, 'dist'),
       filename: 'index.html',
+      minify: {
+        collapseWhitespace: isProd,
+      }
     }),
     new MiniCssExtractPlugin({
       filename: './style/main.css',
@@ -38,6 +55,10 @@ module.exports = {
       ],
     }),
   ],
+  devtool: isProd ? false : 'source-map',
+  optimization: {
+    minimizer: ['...', new CssMinimizerPlugin()],
+  },
   module: {
     rules: [
       {
