@@ -12,7 +12,7 @@ const controllerCard = {
   onFlipCard: (event) => {
     const target = event.target.closest('.js-card');
 
-    if (!target.classList.contains('js-card')) {
+    if (target === null || !target.classList.contains('js-card')) {
       return;
     }
 
