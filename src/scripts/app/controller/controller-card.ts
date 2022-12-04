@@ -1,36 +1,51 @@
+/* eslint-disable no-unused-vars */
 import { getPatternCards } from '../model/model-card';
 import '../model/window';
 
 import controllerModal from './controller-modal';
 
-const controllerCard = {
+interface controller {
+  hasFlipCard: boolean;
+  firstCard: HTMLElement | Element | null;
+  secondCard: HTMLElement | Element | null;
+  count: number;
+  onFlipCard: (event: Event) => void;
+  checkMatchCard: (firstCard: HTMLElement | null, secondCard: HTMLElement | null) => void;
+  offFlipCard: () => void;
+}
+const controllerCard: controller = {
   hasFlipCard: false,
   firstCard: null,
   secondCard: null,
   count: 0,
 
-  onFlipCard: (event) => {
-    const target = event.target.closest('.js-card');
+  onFlipCard: (event: Event): void => {
+    const target = event.target as HTMLElement;
+    const card = target.closest('.js-card');
 
-    if (target === null || !target.classList.contains('js-card')) {
+    if (card === null || !card.classList.contains('js-card')) {
       return;
     }
 
-    target.classList.add('flip');
+    card.classList.add('flip');
 
     if (!controllerCard.hasFlipCard) {
       controllerCard.hasFlipCard = true;
-      controllerCard.firstCard = target;
+      controllerCard.firstCard = card;
       return;
     }
 
-    controllerCard.secondCard = target;
+    controllerCard.secondCard = card;
     controllerCard.hasFlipCard = false;
 
-    controllerCard.checkMatchCard(controllerCard.firstCard, controllerCard.secondCard);
+    controllerCard.checkMatchCard(controllerCard.firstCard as HTMLElement, controllerCard.secondCard as HTMLElement);
   },
 
   checkMatchCard: (firstCard, secondCard) => {
+    if (firstCard === null || secondCard === null) {
+      return;
+    }
+
     if (firstCard.dataset.card === secondCard.dataset.card) {
       controllerCard.count += 1;
       if (controllerCard.count === getPatternCards()) {
@@ -42,7 +57,7 @@ const controllerCard = {
       return;
     }
 
-    controllerCard.offFlipCard(controllerCard.firstCard, controllerCard.secondCard);
+    controllerCard.offFlipCard();
   },
 
   offFlipCard: () => {

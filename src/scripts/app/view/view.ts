@@ -2,20 +2,20 @@ import controllerForm from '../controller/controller-form';
 
 const viewHandlersPage = {
   lobbyForm: () => {
-    const form = document.querySelector('.js-form');
+    const form = document.querySelector('.js-form') as HTMLFormElement;
 
     form.addEventListener('click', (event) => {
-      const { target } = event;
-      const label = event.target.closest('.js-label');
-      const labelList = document.querySelectorAll('.js-label');
-      const button = document.querySelector('.js-button');
+      const target = event.target as HTMLFormElement;
+      const label = target.closest('.js-label') as HTMLLabelElement;
+      const labelList = document.querySelectorAll('.js-label') as NodeListOf<HTMLLabelElement>;
+      const button = document.querySelector('.js-button') as HTMLButtonElement;
 
       if (!target.classList.contains('js-label')) {
         return;
       }
 
       labelList.forEach((element) => {
-        element.classList.remove('active');
+        (element as HTMLLabelElement).classList.remove('active');
       });
 
       label.classList.add('active');

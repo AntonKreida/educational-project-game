@@ -76,7 +76,12 @@ const viewIndex = {
   },
 
   getTemplate: () => {
-    const main = document.querySelector('.js-main');
+    const main = document.querySelector('.js-main') as HTMLDivElement;
+
+    if (main == null) {
+      return;
+    }
+
     main.classList.remove('main-page');
     main.innerHTML = '';
     main.appendChild(viewIndex.template());

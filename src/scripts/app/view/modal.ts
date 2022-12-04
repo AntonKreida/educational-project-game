@@ -1,5 +1,13 @@
-const viewModel = {
-  modalWin: (timeResult) => {
+/* eslint-disable no-unused-vars */
+
+type viewModalType = {
+  modalWin: (timeResult: string) => HTMLDivElement;
+  modalLose: (timeResult: string) => HTMLDivElement;
+  renderModal: (modalStr: string, timeResult: string) => void;
+};
+
+const viewModel: viewModalType = {
+  modalWin: (timeResult: string) => {
     const modal = document.createElement('div');
     modal.classList.add('modal', 'js-modal');
 
@@ -43,7 +51,7 @@ const viewModel = {
     return modal;
   },
 
-  modalLose: (timeResult) => {
+  modalLose: (timeResult: string) => {
     const modal = document.createElement('div');
     modal.classList.add('modal', 'js-modal');
 
@@ -87,9 +95,10 @@ const viewModel = {
     return modal;
   },
 
-  renderModal: (modal, timeResult) => {
-    const body = document.querySelector('.js-body');
-    const modalWindow = viewModel[`${modal}`](timeResult);
+  renderModal: (modalStr: string, timeResult: string) => {
+    const body = document.querySelector('.js-body') as HTMLBodyElement;
+
+    const modalWindow = modalStr === 'modalWin' ? viewModel.modalWin(timeResult) : viewModel.modalLose(timeResult);
 
     body.appendChild(modalWindow);
   },
