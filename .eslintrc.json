@@ -8,21 +8,63 @@
     "airbnb-base/legacy",
     "plugin:import/recommended",
     "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
+    "plugin:import/typescript",
     "prettier"
   ],
   "plugins": [
     "jsx-a11y",
+    "@typescript-eslint",
     "prettier",
     "import",
     "html"
   ],
+  "settings": {
+    "import/extensions": [
+      ".js",
+      ".jsx",
+      ".ts",
+      ".tsx"
+    ],
+    "import/parser": {
+      "@typescript-eslint/parser": [
+        ".ts"
+      ]
+    },
+    "import/resolve": {
+      "node": {
+        "extension": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  },
+  "parser": "@typescript-eslint/parser",
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "rules": {
+    //https://typescript-eslint.io/rules/no-confusing-void-expression
+    "@typescript-eslint/no-confusing-void-expression": "error",
+    //https://typescript-eslint.io/rules/no-var-requires/
+    "@typescript-eslint/no-var-requires": "error",
+    //https://typescript-eslint.io/rules/array-type
+    "@typescript-eslint/array-type": [
+      "error",
+      {
+        "default": "array",
+        "readonly": "generic"
+      }
+    ],
+    //https://typescript-eslint.io/rules/adjacent-overload-signatures/
+    "@typescript-eslint/adjacent-overload-signatures": "error",
     "prettier/prettier": [
       "error",
       {
@@ -34,10 +76,8 @@
         "endOfLine": "crlf"
       }
     ],
-
     //https://eslint.org/docs/latest/rules/no-unused-vars
     "no-unused-vars": "warn",
-    
     // https://eslint.org/docs/latest/rules/prefer-const.htm
     "prefer-const": [
       "warn",
@@ -95,8 +135,20 @@
         "maxEOF": 1
       }
     ],
+    //https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
     //https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md
     "import/prefer-default-export": "error",
+    //https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/newline-after-import.md
     "import/newline-after-import": [
       "error",
       {

@@ -1,5 +1,5 @@
 const viewTimer = {
-  onTimerRev: (secTimer, distant = 5) => {
+  onTimerRev: (secTimer: HTMLDivElement, distant = 5) => {
     secTimer.innerHTML = `0${distant}`;
 
     const timerRev = setInterval(() => {
@@ -13,7 +13,7 @@ const viewTimer = {
     }, 1000);
   },
 
-  onStopwatch(minTimer, secTimer) {
+  onStopwatch(minTimer: HTMLDivElement, secTimer: HTMLDivElement) {
     let time = 0;
     const stopwatch = setInterval(() => {
       if (window.globalStateApp.status === 'end') {

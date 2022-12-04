@@ -1,5 +1,7 @@
+import { cardType, getCardsType } from './type';
+
 const viewCard = {
-  templateCard: (card) => {
+  templateCard: (card: cardType) => {
     const { suit, name } = card;
     const template = `
         <div class="card-wrapper">
@@ -16,22 +18,22 @@ const viewCard = {
     return template;
   },
 
-  renderCard: (field, cardList) => {
+  renderCard: (field: HTMLDivElement, cardList: getCardsType) => {
     field.innerHTML = '';
     const cards = cardList();
 
-    cards.forEach((card) => {
+    cards.forEach((card: cardType) => {
       field.innerHTML += viewCard.templateCard(card);
     });
   },
 
-  onFlipCards: (cards) => {
+  onFlipCards: (cards: HTMLDivElement[]) => {
     cards.forEach((card) => {
       card.classList.add('flip');
     });
   },
 
-  offFlipCards: (cards) => {
+  offFlipCards: (cards: HTMLDivElement[]) => {
     cards.forEach((card) => {
       card.classList.remove('flip');
     });

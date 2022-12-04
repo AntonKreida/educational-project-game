@@ -6,11 +6,11 @@ import controllerCard from './controller-card';
 
 const controllerTimer = {
   checkStatusGame: () => {
-    const timerMin = document.querySelector('.js-min');
-    const timerSec = document.querySelector('.js-sec');
-    const cards = document.querySelectorAll('.js-card');
-    const field = document.querySelector('.js-field');
-    const button = document.querySelector('.js-button');
+    const timerMin = document.querySelector('.js-min') as HTMLDivElement;
+    const timerSec = document.querySelector('.js-sec') as HTMLDivElement;
+    const cards: HTMLDivElement[] = Array.from(document.querySelectorAll('.js-card'));
+    const field = document.querySelector('.js-field') as HTMLDivElement;
+    const button = document.querySelector('.js-button') as HTMLButtonElement;
 
     if (window.globalStateApp.status === 'ready') {
       viewTimer.onTimerRev(timerSec);
@@ -29,7 +29,7 @@ const controllerTimer = {
 
     const checkStatusEndGame = setInterval(() => {
       if (window.globalStateApp.status === 'end') {
-        field.removeEventListener('click', controllerCard.onFlipCard);
+        field?.removeEventListener('click', controllerCard.onFlipCard);
         clearInterval(checkStatusEndGame);
       }
     }, 1000);

@@ -1,8 +1,9 @@
 import controllerRestartGame from '../controller/controller-restart';
 
 import viewCard from './card';
+import { getCardsType, getMarkupFieldType } from './type';
 
-const templateMainControl = (mainInner) => {
+const templateMainControl = (mainInner: HTMLDivElement) => {
   const mainControl = document.createElement('div');
   mainControl.classList.add('main__control', 'control');
   mainInner.appendChild(mainControl);
@@ -53,11 +54,11 @@ const templateMainControl = (mainInner) => {
 };
 
 const templateGamePages = {
-  template: (funcListCard, funcMarkup) => {
-    const main = document.querySelector('.js-main');
+  template: (funcListCard: getCardsType, funcMarkup: getMarkupFieldType) => {
+    const main = document.querySelector('.js-main') as HTMLDivElement;
     main.classList.add('main-page');
 
-    const mainInner = document.querySelector('.js-main-inner');
+    const mainInner = document.querySelector('.js-main-inner') as HTMLDivElement;
     mainInner.innerHTML = '';
     mainInner.classList.add('main__inner', 'main__inner-game-page');
     templateMainControl(mainInner);
@@ -69,8 +70,8 @@ const templateGamePages = {
     viewCard.renderCard(mainField, funcListCard);
   },
 
-  getTemplate: (funcListCard, funcMarkup) => {
-    return templateGamePages.template(funcListCard, funcMarkup);
+  getTemplate: (funcListCard: getCardsType, funcMarkup: getMarkupFieldType) => {
+    templateGamePages.template(funcListCard, funcMarkup);
   },
 };
 

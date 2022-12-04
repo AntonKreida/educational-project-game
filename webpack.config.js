@@ -9,7 +9,7 @@ const filename = (ext) => isDev ? `bundle.${ext}` : `bundle.[contenthash].${ext}
 
 module.exports = {
   mode: 'development',
-  entry: path.resolve(__dirname, 'src/scripts', 'index.js'),
+  entry: path.resolve(__dirname, 'src/scripts', 'index.ts'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
@@ -80,6 +80,14 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: `asset/resource`,
       },
+      {
+        test: /\.tsx?$/i,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      }
     ],
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
   },
 }

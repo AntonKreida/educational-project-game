@@ -5,19 +5,19 @@ import templateGamePages from '../view/game-page';
 import controllerTimer from './controller-timer';
 
 const controllerForm = {
-  validateForm: (form) => {
+  validateForm: (form: HTMLFormElement) => {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
-      const { target } = event;
+      const target = event.target as HTMLFormElement;
       const { elements } = target;
 
       if (!target.checkValidity) {
         return;
       }
 
-      const inputs = Array.from(elements).filter((element) => element.name);
+      const inputs: Element[] = Array.from(elements).filter((element) => (element as HTMLInputElement).name);
 
-      inputs.forEach((input) => {
+      (inputs as HTMLInputElement[]).forEach((input) => {
         if (input.checked) {
           window.globalStateApp.lavel = input.value;
           window.globalStateApp.status = 'ready';

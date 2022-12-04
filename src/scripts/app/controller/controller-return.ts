@@ -4,9 +4,9 @@ import viewHandlersPage from '../view/view';
 
 const controllerReturn = {
   returnIndexPage: () => {
-    const body = document.querySelector('.js-body');
-    const modal = document.querySelector('.js-modal');
-    const button = modal.querySelector('.js-button');
+    const body = document.querySelector('.js-body') as HTMLBodyElement;
+    const modal = document.querySelector('.js-modal') as HTMLDivElement;
+    const button = modal.querySelector('.js-button') as HTMLButtonElement;
 
     button.addEventListener('click', () => {
       body.removeChild(modal);
