@@ -41,7 +41,6 @@ const getRandomCards = (numberCards: number | never[]): cardsListType[] => {
     if (!result.find((elem) => elem.name === item.name && elem.suit === item.suit)) {
       result.push(item);
     }
-
     return result;
   }, []);
 
@@ -49,7 +48,9 @@ const getRandomCards = (numberCards: number | never[]): cardsListType[] => {
     getRandomCards(numberCards);
   }
 
-  return cardsList;
+  const result = cardsList;
+
+  return result;
 };
 
 const getSortCardsDeck = <Type>(arrListCard: Type[]): Type[] => {
@@ -68,3 +69,5 @@ const getCardsPlay = (funcPattern: typeof getPatternCards, funcRandom: typeof ge
 };
 
 export const getCards = getCardsPlay(getPatternCards, getRandomCards, getSortCardsDeck);
+
+module.exports = { getRandomCards };

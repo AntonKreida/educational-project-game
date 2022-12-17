@@ -1,6 +1,6 @@
 window.globalStateApp = {
   status: 'lobby',
-  lavel: '',
+  lavel: 'easy',
   result: {
     status: '',
     resultTimeGame: '',
