@@ -6,3 +6,5 @@ dist
 .prettierignore
 webpack.config.js
 .stylelintrc.json
+test/
+jest.config.js

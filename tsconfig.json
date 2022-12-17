@@ -17,6 +17,7 @@
             "ES6",
             "DOM",
         ],
+        "esModuleInterop": true,
     },
     "files": [
         "./index.d.ts"
@@ -24,5 +25,6 @@
     "include": [
         "index.d.ts",
         "**/*.ts",
+        "src/scripts/app/model/model-card.ts",
     ]
 }
