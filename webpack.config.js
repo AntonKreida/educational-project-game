@@ -64,21 +64,25 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: 'html-loader',
+        exclude: /node_modules/,
       },
       {
         test: /\.(c|sa|sc)ss$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        exclude: /node_modules/,
       },
       {
         test: /\.woff2?$/i,
         type: 'asset/resource',
         generator: {
-          filename: './fonts/[name].[ext]',
+          filename: './fonts/[name][ext]',
         },
+        exclude: /node_modules/,
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: `asset/resource`,
+        exclude: /node_modules/,
       },
       {
         test: /\.tsx?$/i,

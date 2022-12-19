@@ -69,5 +69,3 @@ const getCardsPlay = (funcPattern: typeof getPatternCards, funcRandom: typeof ge
 };
 
 export const getCards = getCardsPlay(getPatternCards, getRandomCards, getSortCardsDeck);
-
-module.exports = { getRandomCards };
